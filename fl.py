@@ -2,7 +2,7 @@ import requests
 import time
 from requests.exceptions import Timeout
 
-a = list(range(210001745,230000000))
+a = list(range(210900010,220000000))
     
 i=1
 for tokens in a:
@@ -14,5 +14,7 @@ for tokens in a:
 		i+=1
 		print(tokens)
 	except Timeout:
-		print('ke '+tokens+' gagal')
+		print('ke '+str(tokens)+' gagal')
+	except:
+		print('ada yang gagal')
 	#time.sleep(5)
